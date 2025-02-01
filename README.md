@@ -7,11 +7,11 @@ Lab 2 for Spring 25 Data Structures
 Referring to the algorithm you implemented in the function **monotonic** in the
 file **edit_me.py** and assuming that the input list has length **N**,
 
-* the big-O worst-case complexity is PUT YOUR ANSWER HERE, and
-* the big-O best-case complexity is PUT YOUR ANSWER HERE.
+* the big-O worst-case complexity is The list is traversed completely to check whether it is monotonic.
+* the big-O best-case complexity is If the first few elements show the list is not monotonic, the function may terminate early.
 
 Referring to the code block below,
-* the big-O worst-case complexity of the function **search** is PUT YOUR ANSWER HERE.
+* the big-O worst-case complexity of the function **search** : The function performs a binary search, so the list size is halved with each iteration.
   ```python
   def search(lst, key):
 
@@ -44,6 +44,9 @@ Notes:
 
 #### Critique
 
-I would use the function **search** (defined above) in real life because COMPLETE OR DELETE THIS SENTENCE.
+I would use the function **search** (defined above) in real life because because it efficiently searches for a key in a sorted list using binary search, which is optimal for large datasets where performance is important.
 
-I would not use the function **search** in real life because OR COMPLETE OR DELETE THIS SENTENCE.
+
+I would not use the function **search** in real life because because it requires the list to be sorted and relies on the monotonic property, which might not always be the case for every dataset you encounter.
+
+# Jan Dueppe
